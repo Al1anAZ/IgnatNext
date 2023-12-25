@@ -1,0 +1,96 @@
+@import  "../styles/values.scss";
+@import  "../styles/mediareq.scss";
+
+.categories {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  &_top {
+    border-bottom: 1px solid $Black40;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    &_path {
+      color: $Black40;
+      > span {
+        color: $Black60;
+      }
+    }
+    &_settings {
+      &_searchbtn {
+        //резиновый, но странно выглядет
+        // width: 10.2%;
+        // height: 0;
+        // padding: {
+        //     top: 1.5%;
+        //     bottom: 2.9%;
+        //   }
+        width: 119px;
+        height: 51px;
+        > p {
+          font-size: 16px;
+        }
+        border-radius: 15px;
+      }
+      &_box {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      &_color_size_search_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        > span {
+          display: flex;
+          justify-content: space-between;
+          width: 440px;
+        }
+      }
+      &_color {
+        border: none;
+        > legend {
+          margin-bottom: 10px;
+        }
+        &_input {
+          -webkit-appearance: none; /* Safari и Chrome */
+          -moz-appearance: none; /* Firefox */
+          appearance: none; /* Стандартное значение */
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+          border-radius: 20px;
+        }
+      }
+      &_size {
+        border: none;
+        > legend {
+          margin-bottom: 10px;
+        }
+        &_input {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          z-index: 1;
+          background-color: $Black10;
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+          position: relative;
+          &:checked {
+            border: 1px solid $Black80;
+          }
+          &::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../styles/mediareq.scss";
+.footer {
+  border-top: 1px solid $Black20;
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 46px;
+    height: 243px;
+    &_contacts {
+      &_title {
+        color: $Black80;
+      }
+      &_p {
+        &_title {
+          margin-bottom: 20px;
+        }
+        margin-bottom: 10px;
+        color: $Black60;
+      }
+    }
+    &_forcustumers {
+      &_title {
+        color: $Black80;
+      }
+      &_p {
+        &_title {
+          margin-bottom: 20px;
+        }
+        margin-bottom: 10px;
+        color: $Black60;
+      }
+    }
+    &_personal_office {
+      &_title {
+        color: $Black80;
+      }
+      &_p {
+        &_title {
+          margin-bottom: 20px;
+        }
+        margin-bottom: 10px;
+        color: $Black60;
+      }
+    }
+    &_about {
+      &_title {
+        color: $Black80;
+      }
+      &_p {
+        &_title {
+          margin-bottom: 20px;
+        }
+        margin-bottom: 10px;
+        color: $Black60;
+      }
+    }
+  }
+  &_bottom {
+    background-color: $Black80;
+    color: white;
+    &_box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 93px;
+    }
+    &_nav {
+      display: inline-flex;
+      &_li {
+        margin-right: 30px;
+      }
+    }
+    &_copyr {
+      font-size: 12px;
+    }
+  }
+}

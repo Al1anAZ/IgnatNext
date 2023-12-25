@@ -1,0 +1,36 @@
+
+@import "../../styles/mediareq.scss";
+.product {
+  display: flex;
+  flex-direction: column;
+  &_top {
+    position: relative;
+    &_fav {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      top: 10px;
+      right: 10px;
+      border-radius: 50%;
+    }
+  }
+  &_bottom {
+    margin-top: 4.1%;
+    display: flex;
+    flex-direction: column;
+    &_h4 {
+      color: $Black80;
+    }
+    &_category_desc {
+      margin-top: 5.45%;
+      color: $Black60;
+    }
+    &_price {
+      margin-top: 4.6%;
+      color: rgba(74, 170, 78, 1);
+    }
+  }
+}

@@ -1,0 +1,72 @@
+
+@import "../../styles/mediareq.scss";
+.header {
+  &_top {
+    background-color: $Black80;
+  }
+  &_top_body,
+  &_bottom_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_top_body {
+    color: white;
+    font-size: 12px;
+    height: 40px;
+  }
+  &_link_phone {
+    margin-right: 23px;
+  }
+  &_top_right {
+    > span {
+      cursor: pointer;
+    }
+  }
+  &_bottom_body {
+    height: 65px;
+  }
+  &_login {
+    margin-right: 5px;
+  }
+  &_registr {
+    margin-left: 5px;
+  }
+  &_bottom {
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15);
+  }
+  &_list {
+    display: inline-flex;
+  }
+  &_link {
+    margin-left: 30px;
+  }
+  &_search_fav_cart {
+    width: 370px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  &_fav_cart {
+    display: flex;
+    > a {
+      margin-left: 20px;
+      height: 24px;
+      width: 24px;
+    }
+  }
+  &_search {
+    display: flex;
+    background-color: $Black10;
+    border: none;
+    width: 100%;
+    border-radius: 15px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: 9px;
+    padding: {
+      left: 40px;
+      right: 15px;
+    }
+  }
+}

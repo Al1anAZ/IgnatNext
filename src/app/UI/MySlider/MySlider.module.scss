@@ -1,0 +1,63 @@
+@import "../../styles/values.scss";
+@import "../../styles/mediareq.scss";
+.main_slider {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_box {
+    position: relative;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    max-height: 400px;
+  }
+  &_view_box {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  &_content {
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+    &_item {
+      flex: 0 0 auto;
+      max-width: 100%;
+      > img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &_right_arrow {
+    right: -50px;
+    position: absolute;
+  }
+  &_left_arrow {
+    left: -50px;
+    position: absolute;
+    transform: rotate(180deg);
+  }
+  &_pagination {
+    &_button {
+      margin: {
+        left: 10px;
+      }
+      background-color: $Black20;
+      width: 15px;
+      height: 4px;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+  }
+}
+.active {
+  background-color: $Black80;
+}
+// :global {
+//   .react-draggable-dragging {
+//     transition: none;
+//   }
+// }

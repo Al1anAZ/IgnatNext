@@ -1,0 +1,34 @@
+@import "./styles/values.scss";
+@import "./styles/mediareq.scss";
+.main {
+  &_to_catalog {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    &_text {
+      flex: 53%;
+      &_h2 {
+        color: $Black80;
+        max-width: 98%;
+      }
+      &_p {
+        color: $Black60;
+        max-width: 77%;
+
+        margin-top: 5%;
+      }
+      &_button {
+        margin-top: 6.7%;
+        width: 27.5%;
+        padding: {
+          top: 2.659%;
+          bottom: 2.659%;
+        }
+      }
+    }
+    &_img_box {
+      flex: 50%;
+    }
+  }
+}

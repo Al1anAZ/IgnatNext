@@ -1,0 +1,8 @@
+@import "../../styles/values.scss";
+@import "../../styles/mediareq.scss";
+.mybutton {
+    border-radius: calc(0.9vw + 1px);
+    background-color: $Black100;
+    color: white;
+  }
+  
